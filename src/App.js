@@ -202,10 +202,10 @@ function App() {
       <footer className="footer">
         <div className="logo" style={{ fontSize: 18 }}>CINE<span style={{ color: "#e63232" }}>PLEX</span></div>
         <div className="footer-links">
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms of Service</a>
-          <a href="#">Help Center</a>
-          <a href="#">API</a>
+          <a href="/privacy-policy">Privacy Policy</a>
+          <a href="/terms-of-service">Terms of Service</a>
+          <a href="/help-center">Help Center</a>
+          <a href="/api">API</a>
         </div>
         <div>© 2024 CINEPLEX INTERACTIVE. ALL RIGHTS RESERVED.</div>
       </footer>

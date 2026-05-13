@@ -1,70 +1,80 @@
-# Getting Started with Create React App
+# CinePlex
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+CinePlex is a React movie discovery app for browsing trending films, searching titles, exploring genres, viewing movie details, watching trailers, and saving a personal watchlist. It uses Firebase Authentication for user accounts, Firestore for watchlist storage, and The Movie Database API for live movie data.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Email/password sign up and login with Firebase Authentication
+- Trending movie feed powered by TMDB
+- Movie search by title
+- Genre filtering for common categories
+- Infinite scrolling movie grid
+- Detailed movie pages with posters, backdrops, ratings, runtime, synopsis, cast, crew, trailers, and similar movies
+- Actor pages with biography and filmography
+- User watchlist saved to Firestore
+- Profile page accessible from the avatar menu
+- Responsive dark UI styled for a streaming-library experience
 
-### `npm start`
+## Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- React
+- Create React App
+- Firebase Authentication
+- Cloud Firestore
+- The Movie Database API
+- CSS
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+### Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Node.js
+- npm
+- Firebase project
+- TMDB API key
 
-### `npm run build`
+### Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+npm install
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Create a `.env` file in the project root and add your TMDB key:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```env
+REACT_APP_TMDB_KEY=your_tmdb_api_key
+```
 
-### `npm run eject`
+Update `src/firebase.js` with your Firebase project configuration if you are using a different Firebase project.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Run Locally
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+npm start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Open `http://localhost:3000` in your browser.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Build
 
-## Learn More
+```bash
+npm run build
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+This creates an optimized production build in the `build` folder.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Project Structure
 
-### Code Splitting
+```text
+src/
+  components/        Reusable UI and page components
+  context/           Authentication context
+  data/              TMDB API helpers
+  App.js             Main app state and page routing
+  App.css            Global styling
+  firebase.js        Firebase setup
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Repository Description
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+A React movie discovery app with Firebase authentication, Firestore watchlists, TMDB-powered search, genre browsing, trailers, actor pages, and user profiles.
