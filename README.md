@@ -79,6 +79,6 @@ src/
 
 A React movie discovery app with Firebase authentication, Firestore watchlists, TMDB-powered search, genre browsing, trailers, actor pages, and user profiles.
 
-##Link to the WebApp:
+## Link to the WebApp:
 
 https://cineplex-aupw.vercel.app/
